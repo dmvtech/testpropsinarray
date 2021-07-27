@@ -1,0 +1,50 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "TmxLUO",
+    "name": "d2",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "NJwWg9"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "qqLbFh"
+          },
+          "index": "dialog.foreach.index",
+          "value": "dialog.foreach.value",
+          "itemsProperty": "user.questions",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "wUqNUw"
+              },
+              "activity": "${SendActivity_wUqNUw()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "yUzVRH"
+          },
+          "activity": "${SendActivity_yUzVRH()}"
+        }
+      ]
+    }
+  ],
+  "generator": "d2.lg",
+  "recognizer": "d2.lu.qna",
+  "id": "d2"
+}

@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\v-dvanhooser\\Desktop\\Customers\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\v-dvanhooser\\Desktop\\Customers\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\v-dvanhooser\\Desktop\\Customers\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459.csproj",
+        "projectName": "propertiesoutsidedialog8459",
+        "projectPath": "C:\\Users\\v-dvanhooser\\Desktop\\Customers\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459.csproj",
+        "packagesPath": "C:\\Users\\v-dvanhooser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\v-dvanhooser\\Desktop\\Customers\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\v-dvanhooser\\Desktop\\Customers\\propertiesoutsidedialog8459\\propertiesoutsidedialog8459\\NuGet.Config",
+          "C:\\Users\\v-dvanhooser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://botbuilder.myget.org/F/botbuilder-v4-dotnet-daily/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Bot.Builder.AI.Luis": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Microsoft.Bot.Builder.AI.QnA": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

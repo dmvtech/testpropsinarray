@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_xd6f7i()
+[Activity
+    Text = ${SendActivity_xd6f7i_text()}
+]
+
+# SendActivity_xd6f7i_text()
+- ${user.questions}

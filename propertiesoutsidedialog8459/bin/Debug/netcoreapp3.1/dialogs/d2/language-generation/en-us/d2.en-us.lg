@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_wUqNUw()
+[Activity
+    Text = ${SendActivity_wUqNUw_text()}
+]
+
+# SendActivity_wUqNUw_text()
+- ${dialog.foreach.value.index} and ${dialog.foreach.value.text}
+# SendActivity_yUzVRH()
+[Activity
+    Text = ${SendActivity_yUzVRH_text()}
+]
+
+# SendActivity_yUzVRH_text()
+- Done d2

@@ -1,0 +1,88 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "ksJktf",
+    "name": "d1",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "vlQV4e"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "4N2QQj"
+          },
+          "property": "user.questions",
+          "value": []
+        },
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "mvMOeH"
+          },
+          "assignments": [
+            {
+              "property": "dialog.question1",
+              "value": {
+                "index": "A",
+                "text": "questiontexta"
+              }
+            },
+            {
+              "property": "dialog.question2",
+              "value": {
+                "index": "B",
+                "text": "questiontextb"
+              }
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.EditArray",
+          "$designer": {
+            "id": "Rbn1Jk"
+          },
+          "changeType": "push",
+          "value": "=dialog.question1",
+          "itemsProperty": "user.questions"
+        },
+        {
+          "$kind": "Microsoft.EditArray",
+          "$designer": {
+            "id": "f20J2c"
+          },
+          "changeType": "push",
+          "itemsProperty": "user.questions",
+          "value": "=dialog.question2"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "xd6f7i"
+          },
+          "activity": "${SendActivity_xd6f7i()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "GLMUqQ"
+          },
+          "activityProcessed": true,
+          "dialog": "d2"
+        }
+      ]
+    }
+  ],
+  "generator": "d1.lg",
+  "recognizer": "d1.lu.qna",
+  "id": "d1"
+}
